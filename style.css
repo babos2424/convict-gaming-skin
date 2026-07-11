@@ -1,1 +1,117 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
 
+body{
+    background:#0f172a;
+    overflow:hidden;
+    color:#fff;
+}
+
+.background{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:linear-gradient(135deg,#0f172a,#1e293b,#111827);
+    z-index:-1;
+}
+
+.container{
+    display:flex;
+    width:100%;
+    height:100vh;
+}
+
+.sidebar{
+    width:360px;
+    background:#111827;
+    border-right:1px solid #222;
+    padding:30px;
+}
+
+.logo{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.logo h1{
+    font-size:30px;
+}
+
+.logo span{
+    color:#999;
+}
+
+.steamButton{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:#1b75d0;
+    color:white;
+    font-size:17px;
+    cursor:pointer;
+    margin-bottom:30px;
+}
+
+.card{
+    margin-bottom:20px;
+}
+
+.card label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+select{
+    width:100%;
+    padding:13px;
+    border-radius:10px;
+    border:none;
+    background:#1f2937;
+    color:white;
+}
+
+#saveButton{
+    width:100%;
+    padding:15px;
+    margin-top:20px;
+    border:none;
+    border-radius:10px;
+    background:#22c55e;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+}
+
+.content{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.preview{
+    text-align:center;
+}
+
+.preview img{
+    width:700px;
+    max-width:90%;
+    border-radius:20px;
+    box-shadow:0 0 40px rgba(0,0,0,.5);
+}
+
+.preview h2{
+    margin-top:25px;
+    font-size:34px;
+}
+
+.preview p{
+    color:#999;
+    margin-top:10px;
+}

@@ -4,75 +4,66 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Convict Gaming Skin</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
-body{
-background:#0f1117;
-color:white;
-display:flex;
-justify-content:center;
-align-items:center;
-height:100vh;
-}
-.card{
-width:500px;
-background:#1a1d29;
-padding:40px;
-border-radius:20px;
-text-align:center;
-box-shadow:0 0 30px rgba(0,0,0,.5);
-}
-h1{
-font-size:40px;
-margin-bottom:10px;
-}
-p{
-opacity:.7;
-margin-bottom:30px;
-}
-.btn{
-display:block;
-background:#ffb000;
-color:#000;
-padding:15px;
-margin:12px 0;
-text-decoration:none;
-font-weight:bold;
-border-radius:12px;
-transition:.2s;
-}
-.btn:hover{
-transform:scale(1.03);
-}
-.footer{
-margin-top:25px;
-opacity:.5;
-font-size:13px;
-}
-</style>
-
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div class="card">
+<div class="container">
+
+<div class="left">
 
 <h1>🎮 Convict Gaming</h1>
-
 <p>CS2 Skin Panel</p>
 
-<a class="btn" href="#">🔐 Steam ile Giriş</a>
-<a class="btn" href="#">🔪 Bıçaklar</a>
-<a class="btn" href="#">🧤 Eldivenler</a>
-<a class="btn" href="#">🔫 Skinler</a>
+<button class="steam">Steam ile Giriş</button>
 
-<div class="footer">
-Convict Gaming © 2026
+<div class="card">
+<label>🔪 Bıçak</label>
+<select id="knife">
+<option>Karambit</option>
+<option>Butterfly Knife</option>
+<option>M9 Bayonet</option>
+<option>Skeleton Knife</option>
+<option>Talon Knife</option>
+</select>
+</div>
+
+<div class="card">
+<label>🧤 Eldiven</label>
+<select id="glove">
+<option>Sport Gloves</option>
+<option>Driver Gloves</option>
+<option>Specialist Gloves</option>
+<option>Moto Gloves</option>
+</select>
+</div>
+
+<div class="card">
+<label>🔫 Silah</label>
+<select id="weapon">
+<option>AK-47</option>
+<option>M4A1-S</option>
+<option>AWP</option>
+<option>Desert Eagle</option>
+</select>
+</div>
+
+<button class="save">💾 Kaydet</button>
+
+</div>
+
+<div class="right">
+
+<img id="preview" src="https://placehold.co/600x400/1c1c1c/ffffff?text=Skin+Preview">
+
+<h2 id="skinName">Karambit</h2>
+
 </div>
 
 </div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
